@@ -1,5 +1,6 @@
 #
-# Dockerfile to build Das U-Boot for the Cyrus motherboards
+# Dockerfile to build Das U-Boot for the Cyrus (AmigaOne X5000/20 and AmigaOne X5000/40)
+# and Tabor (AmigaOne A1222) motherboards.
 #
 # The source code is assumed to be in
 #  /opt/u-boot
@@ -47,4 +48,3 @@ RUN apt-get update && apt-get upgrade --yes && \
 # Add the cross-compiler to the PATH
 #
 ENV PATH=/opt/powerpc-elf-4.9.1/bin:$PATH
-
